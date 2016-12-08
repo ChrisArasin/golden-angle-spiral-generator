@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+  margin:0;
+  padding:0
+  color: #fff;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin:0;
+  background: #111;
+  height: 100%;
+  font-family: 'Gotham Rounded', sans-serif;
+  color: #fff;
+}
+.wrap {
+  min-height: 100%;
+}
+.blossom-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  position: relative;
+  z-index: 1;
+  padding-top: 249px;
+}
+.size-function-wrap {
+  position: relative;
+  top: -4px;
+}
+svg {
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+}
+circle {
+  fill:  rgba(255, 255, 255, 1);
+}
+
+.row {
+  padding: 10px;
+}
+h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+.controls {
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #1b1b1b;
+  z-index: 2;
+  overflow: auto;
+
+}
+.controls-inner {
+  min-width: 910px;
+}
+.controls:after, .row:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+
+.settings-input {
+  padding: 5px 0;
+  float: left;
+  width: 90px;
+  margin-right: 7px;
+}
+button {
+  background: #c7a007;
+  color: #222;
+  font-weight: 500;
+  border-radius: 2px;
+  border: none;
+  font-size: 16px;
+  padding: 4px 15px 5px;
+  position: relative;
+  top: 26px;
+}
+label {
+  font: normal 500 11px/1.4 'Gotham Rounded', sans-serif;
+  color: #999;
+  letter-spacing: .025em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+.settings-input input {
+  border-radius: 2px;
+  font: normal normal 16px/1.4 'Gotham Rounded', sans-serif;
+  border: none;
+  background: #333;
+  color: #fff;
+  display: block;
+  padding: 2px 8px;
+  width: 90px;
+  border: 1px solid #333;
+  transition: all .2s;
+  outline: 0;
+}
+.settings-input input:focus {
+  border: 1px solid #555;
+}
+label sup {
+  text-transform: none;
+  letter-spacing: normal;
+}
